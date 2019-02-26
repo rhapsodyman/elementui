@@ -1,4 +1,5 @@
 <template>
+<div id="filter-group">
   <el-card class="box-card">
     <div slot="header" class="clearfix">
       <span>{{groupLabel}}</span>
@@ -25,6 +26,7 @@
       </el-col>
     </el-row>
   </el-card>
+</div>
 </template>
 
 <script>

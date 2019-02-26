@@ -28,8 +28,6 @@
         <el-switch
           v-if="filter.type == 'Switch'"
           v-model="selected"
-          active-color="#13ce66"
-          inactive-color="#ff4949"
           :active-text="`${stateOfSwitch.toString()}`"
         ></el-switch>
 
@@ -242,11 +240,14 @@ export default {
 .el-card__body {
   padding-top: 1px;
   padding-bottom: 3px;
+
 }
 
 .el-card {
   margin-top: 5px;
   margin-bottom: 5px;
+  box-shadow: 5px 2px 5px rgba(0,0,0,0.17), 6px 6px 6px rgba(0,0,0,0.21)   !important; 
+  border: 2px solid rgba(0,0,0,0.09)
 }
 
 .el-card__header {
@@ -265,5 +266,12 @@ export default {
   margin-left: 10px;
 }
 
+ #filter-group {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  
+} 
 
 </style>
